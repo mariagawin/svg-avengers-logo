@@ -1,0 +1,33 @@
+.circle {
+  fill: transparent;
+  stroke-width: 5.5;
+}
+
+.outer-circle {
+  stroke: hsl(2, 66%, 46%);
+}
+
+.outer-circle:hover {
+  stroke: hsl(211, 76%, 35%);
+  transition: stroke 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.outer-circle:hover + .inner-circle {
+  stroke: hsl(2, 66%, 46%);
+  transition: stroke 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.inner-circle {
+  stroke: hsl(211, 76%, 35%);
+}
+
+.letter {
+  stroke: hsl(0, 100%, 100%);
+  stroke-width: 0.5;
+}
+
+.letter:hover {
+  stroke: hsl(36, 66%, 67%);
+  stroke-width: 0.8;
+  transition: all 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
